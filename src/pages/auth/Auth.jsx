@@ -168,7 +168,7 @@ export default function Auth() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="form-input"
-                placeholder="John Doe"
+                placeholder="Your full names"
                 required={!isLogin}
                 disabled={loading}
               />
