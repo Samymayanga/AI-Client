@@ -285,55 +285,6 @@ export default function Auth() {
             </div>
           )}
 
-          {/* Remember me / Forgot password - only for login */}
-          {isLogin && (
-            <div className="form-options">
-              <label className="checkbox-label">
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  disabled={loading}
-                />
-                <span className="checkbox-text">Remember me</span>
-              </label>
-              <button type="button" className="forgot-link" disabled={loading}>
-                Forgot password?
-              </button>
-            </div>
-          )}
-
-          {/* Terms agreement - only for signup */}
-          {!isLogin && (
-            <div className="form-terms">
-              <label className="checkbox-label">
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  required
-                  disabled={loading}
-                />
-                <span className="checkbox-text">
-                  I agree to the{" "}
-                  <button
-                    type="button"
-                    className="terms-link"
-                    disabled={loading}
-                  >
-                    Terms
-                  </button>{" "}
-                  and{" "}
-                  <button
-                    type="button"
-                    className="terms-link"
-                    disabled={loading}
-                  >
-                    Privacy Policy
-                  </button>
-                </span>
-              </label>
-            </div>
-          )}
-
           {/* Submit Button */}
           <button
             type="submit"
