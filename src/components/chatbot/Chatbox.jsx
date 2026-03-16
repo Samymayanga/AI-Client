@@ -158,11 +158,6 @@ export default function Chatbox() {
                 />
               </div>
               <p className="welcome-subtitle">Ask me anything...</p>
-              <div className="welcome-features">
-                <span className="feature-badge">Chat</span>
-                <span className="feature-badge">Generate Images</span>
-                <span className="feature-badge">AI Powered</span>
-              </div>
             </div>
           </div>
         )}
@@ -182,20 +177,7 @@ export default function Chatbox() {
           </div>
         )}
       </div>
-      {/* Image publish toggle - only shows in image mode
-      {mode === "image" && (
-        <div className="publish-row">
-          <label className="publish-label">
-            <span className="publish-text">Publish to community</span>
-            <input
-              type="checkbox"
-              className="publish-checkbox"
-              checked={isPublished}
-              onChange={(e) => setIsPublished(e.target.checked)}
-            />
-          </label>
-        </div>
-      )} */}
+
       {/* Prompt input form */}
       <form onSubmit={onSubmit} className="prompt-form">
         <div className="input-container">
