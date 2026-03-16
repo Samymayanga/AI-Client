@@ -1,0 +1,80 @@
+/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light theme (default) */
+:root {
+  --bg-primary: #fff9e6;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f5e9d3;
+  --text-primary: #3d2e0e;
+  --text-secondary: #7d6b3a;
+  --text-tertiary: #b58b3c;
+  --accent-primary: #fbbf24;
+  --accent-secondary: #f59e0b;
+  --accent-soft: #fef3c7;
+  --border-color: #f0e6cc;
+  --hover-bg: #f5e9d3;
+  --active-bg: #eddbb0;
+  --shadow-color: rgba(251, 191, 36, 0.15);
+  --gradient-primary: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --gradient-soft: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  --card-bg: #ffffff;
+  --input-bg: #f5e9d3;
+}
+
+/* Dark theme - applied when .dark class is present */
+.dark {
+  --bg-primary: #1f1a0a;
+  --bg-secondary: #2a2312;
+  --bg-tertiary: #3d321a;
+  --text-primary: #ffedb8;
+  --text-secondary: #d4b97b;
+  --text-tertiary: #b58b3c;
+  --accent-primary: #fbbf24;
+  --accent-secondary: #f59e0b;
+  --accent-soft: #fef3c7;
+  --border-color: #3d321a;
+  --hover-bg: #2a2312;
+  --active-bg: #3d321a;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --gradient-primary: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --gradient-soft: linear-gradient(135deg, #2a2312 0%, #3d321a 100%);
+  --card-bg: #2a2312;
+  --input-bg: #1f1a0a;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* App.css - Add/update these styles */
+
+.main-content {
+  margin-left: 320px; /* Same as sidebar width */
+  width: calc(100% - 320px);
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding-top: 70px;
+  }
+}
